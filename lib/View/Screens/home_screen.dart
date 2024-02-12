@@ -167,24 +167,22 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Container(
                             width: .55.sw,
-                            child: Expanded(
-                              child: Padding(
-                                padding: EdgeInsets.fromLTRB(.01.sw, .14.sh, 0,  0),
-                                child: GridView.builder(
-                                  shrinkWrap: true,
-                                  physics: NeverScrollableScrollPhysics(),
-                                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount:  3,
-                                      childAspectRatio:  2.0,
-                                      mainAxisSpacing:  0.0,
-                                      crossAxisSpacing:  0.0),
-                                  itemCount:  40,
-                                  itemBuilder: (BuildContext context, int index) {
-                                    return SeatWidget(
-                                      number: index +  1,
-                                    );
-                                  },
-                                ),
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(.01.sw, .14.sh, 0,  0),
+                              child: GridView.builder(
+                                shrinkWrap: true,
+                                physics: NeverScrollableScrollPhysics(),
+                                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount:  3,
+                                    childAspectRatio:  2.0,
+                                    mainAxisSpacing:  0.0,
+                                    crossAxisSpacing:  0.0),
+                                itemCount:  40,
+                                itemBuilder: (BuildContext context, int index) {
+                                  return SeatWidget(
+                                    number: index +  1,
+                                  );
+                                },
                               ),
                             ),
                           ),
